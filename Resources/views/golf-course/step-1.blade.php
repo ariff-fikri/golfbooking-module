@@ -9,7 +9,7 @@
             @foreach ($courses as $course)
                 <div class="col-lg-12 course-div-card d-none">
                     <input type="radio" class="btn-check course_id" id="course_id_{{ $course->id }}" name="course_id" value="{{ $course->id }}" />
-                    <label id='show_bg_2' style="background: rgb(255, 255, 255); background: linear-gradient(106DEG, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9528186274509804) 60%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%), {{ $course->id == 1 ? 'url(assets/media/image/east1.png)' : ($course->id == 2 ? 'url(assets/media/image/east2.png)' : 'url(assets/media/image/east3.png)') }};" class="btn btn-outline btn-active-light-primary px-0 pb-4 pt-0 d-flex mb-10 flex-column" for="course_id_{{ $course->id }}">
+                    <label id='show_bg_2' style="background: rgb(255, 255, 255); background: linear-gradient(106DEG, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9528186274509804) 60%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%), {{ $course->id == 1 ? 'url(' . Module::asset('golfbooking:media/image/east1.png') . ')' : ($course->id == 2 ? 'url(' . Module::asset('golfbooking:media/image/east2.png') . ')' : 'url(' . Module::asset('golfbooking:media/image/east3.png') . ')') }};" class="btn btn-outline btn-active-light-primary px-0 pb-4 pt-0 d-flex mb-10 flex-column" for="course_id_{{ $course->id }}">
                         <div class="bg-white ps-1" style="border-top: 5px; border-top-left-radius: 3px; border-top-right-radius: 3px;">
                             <div class="row hover-scroll-x flex-row py-4 px-3" id="tns-slots-{{ $course->id }}">
                                 @foreach ($dates as $date)
