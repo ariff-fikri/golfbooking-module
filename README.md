@@ -16,7 +16,7 @@ composer require  nwidart/laravel-modules
 ```
 
 ### Autoloading
-By default, the module classes are not loaded automatically. You can autoload your modules using `psr-4`. For example:
+By default, the module classes are not loaded automatically. You can autoload your modules using `psr-4` on your `composer.json`. For example:
 
 ``` json
 {
