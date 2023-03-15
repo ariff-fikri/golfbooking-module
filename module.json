@@ -1,0 +1,13 @@
+{
+    "name": "GolfBooking",
+    "alias": "golfbooking",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\GolfBooking\\Providers\\GolfBookingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

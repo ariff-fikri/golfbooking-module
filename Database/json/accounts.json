@@ -1,0 +1,11 @@
+[{
+        "user_id": "3",
+        "account_no": "1234567890",
+        "bank_name": "Maybank"
+    },
+    {
+        "user_id": "4",
+        "account_no": "0987654321",
+        "bank_name": "CIMB Bank"
+    }
+]

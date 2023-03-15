@@ -1,0 +1,66 @@
+@media (min-width: 415px) {
+    body{
+        max-width: 414px !important;
+        min-height: 896px !important;
+        width: 100% !important;
+        margin: 0 auto;
+        background: #fff;
+    }
+}
+    html{
+        background: #fff !important;
+
+    }
+
+    .bg-light {
+        --kt-bg-rgb-color: var(--kt-light-rgb);
+        background-color: transparent !important;
+    }
+	.symbol>img {
+		border-radius: 50%;
+	}
+
+    .app-engage-btn {
+
+        color: #078E83;
+         background-color: #fff;
+		 border-color: #fff;
+		 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+
+    .svg-icon {
+        line-height: 1;
+        color: #078E83;
+    }
+
+    .app-engage-btn.hover-dark:hover i, .app-engage-btn.hover-dark:hover .svg-icon {
+        color: #fff;
+    }
+
+    .app-engage-btn.hover-dark:hover {
+        color: #fff;
+        border-color: #078E83;
+        background-color: #078E83;
+    }
+
+    btn-check:active + .btn.btn-active-light, .btn-check:checked + .btn.btn-active-light, .btn.btn-active-light.active, .btn.btn-active-light.show, .btn.btn-active-light:active:not(.btn-active), .btn.btn-active-light:focus:not(.btn-active), .btn.btn-active-light:hover:not(.btn-active), .show > .btn.btn-active-light {
+		color: #000000;
+		border-color: var(--kt-light);
+		background-color: #f5f8fa47 !important;
+	}
+
+    #banner {
+        background: rgb(255, 255, 255);
+
+        background:
+            url(assets/media/image/banner-member.png);
+        height: auto;
+        background-size: cover;
+
+    }
+
+    .text-golf {
+        color: #078E83 !important;
+    }
+

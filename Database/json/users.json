@@ -1,0 +1,32 @@
+[{
+        "first_name": "Super",
+        "last_name": "Admin",
+        "email": "superadmin@cara.com.my",
+        "nickname": "SuperAdmin",
+        "username": "superadmin"
+    },
+    {
+        "first_name": "Test Admin 1",
+        "last_name": "User",
+        "email": "admin1@cara.com.my",
+        "nickname": "admin 1",
+        "username": "admin1"
+    },
+    {
+        "first_name": "Test Customer 1",
+        "last_name": "User",
+        "email": "customer1@cara.com.my",
+        "nickname": "staff 1",
+        "username": "staff1",
+        "member_id": "CCM007",
+        "phone_no": "0192837465"
+    },
+    {
+        "first_name": "Test Customer 2",
+        "last_name": "User",
+        "email": "customer2@cara.com.my",
+        "nickname": "customer 1",
+        "username": "customer1",
+        "member_id": "CCM098"
+    }
+]
