@@ -4,6 +4,7 @@ namespace Modules\GolfBooking\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\GolfBooking\Console\initialCommand;
 use Modules\GolfBooking\Http\Middleware\Authenticate;
 use Modules\GolfBooking\Http\Middleware\RedirectIfAuthenticated;
 
