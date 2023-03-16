@@ -106,7 +106,7 @@
         </div>
         <div class="row text-center">
             <div class="col-4">
-                <a href="{{ route('facility-booking.facility-booking.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                <a href="{{ route('facility-booking.facility.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
                     <i class="fas fa-calendar-check fs-3x text-primary"></i>
                      <span class="mt-3"> Facility Booking </span>
                     </a>

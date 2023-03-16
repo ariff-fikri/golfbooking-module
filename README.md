@@ -7,7 +7,7 @@
 
 [![Total Downloads](https://img.shields.io/badge/downloads-7-green)](https://packagist.org/packages/nwidart/laravel-modules)
 
-`cara/golfbooking-module` is a Laravel package which created to manage booking of a golf system on your Laravel app. Module is like a Laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 8.
+`cara/golfbooking-module` is a Laravel package which created to manage booking of a golf system on the `Cara/enviro` Laravel app. Module is just like a Laravel package, it has some views, controllers or models. This package is supported and tested in Laravel 8.
 
 ## Install
 This package require another package to be installed. run the following command to install it first:
