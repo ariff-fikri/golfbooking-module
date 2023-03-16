@@ -62,7 +62,7 @@ class initialCommand extends Command
 
         $bar->advance();
 
-        Artisan::call('module:migrate-fresh golfbooking');
+        Artisan::call('module:migrate golfbooking');
 
         $this->newLine();
 

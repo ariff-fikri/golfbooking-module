@@ -17,7 +17,6 @@ class GolfBookingDatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call([
-            UserSeeder::class,
             AccountSeeder::class,
             FacilitySeeder::class,
             CourseSeeder::class,
