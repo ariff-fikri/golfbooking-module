@@ -77,7 +77,7 @@
                             <!--end::Label-->
                         </div>
                         <h4 class="fw-bold  ">BREAKFAST <br><span class="ms-6"> HOUR 10% OFF </span></h4>
-                        <a href="{{ route('dashboard.index') }}" class="btn btn-sm btn-primary py-1 px-3 ms-6">Find out
+                        <a href="{{ route('facility-booking.dashboard.index') }}" class="btn btn-sm btn-primary py-1 px-3 ms-6">Find out
                             more</a>
                     </div>
                     <!--end::Info-->
@@ -87,7 +87,7 @@
             <!--end::Col-->
             <div class="col-12 d-flex justify-content-between align-items-center mb-3">
                 <h4>My Booking</h4>
-                <a href="{{ route('booking.index') }}">See all</a>
+                <a href="{{ route('facility-booking.booking.index') }}">See all</a>
             </div>
             <div class="col-12">
                 <div class="card p-5" style="background: linear-gradient(to left, #51C6BC 0%, #11998E 100%);">
@@ -106,7 +106,7 @@
         </div>
         <div class="row text-center">
             <div class="col-4">
-                <a href="{{ route('facility-booking.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                <a href="{{ route('facility-booking.facility-booking.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
                     <i class="fas fa-calendar-check fs-3x text-primary"></i>
                      <span class="mt-3"> Facility Booking </span>
                     </a>

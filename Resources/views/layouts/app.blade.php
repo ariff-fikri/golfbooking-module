@@ -96,7 +96,7 @@
                             </div>
                             <!--end::Aside mobile toggle-->
                             <!--begin::Logo-->
-                            <a href="{{ route('landing.index') }}" class="d-flex align-items-center">
+                            <a href="{{ route('facility-booking.landing.index') }}" class="d-flex align-items-center">
                                 <img alt="Logo" src="{{ Module::asset('golfbooking:media/logos/cara_golf_icon.png') }}" class="h-30px" />
                             </a>
                             <!--end::Logo-->

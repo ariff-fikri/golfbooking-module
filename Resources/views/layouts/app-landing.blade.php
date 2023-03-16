@@ -70,7 +70,7 @@
                                     data-kt-menu="true" >
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-5">
-                                        {{-- <form action="{{ route('logout') }}" id="form-logout" method="POST">
+                                        {{-- <form action="{{ route('facility-booking.logout') }}" id="form-logout" method="POST">
                                             @csrf
                                             <a onclick="$('#form-logout').submit();" class="menu-link px-5">Sign Out</a>
                                         </form> --}}

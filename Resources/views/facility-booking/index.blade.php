@@ -68,7 +68,7 @@
     <script>
         $('#header-facility').html('Choose Facility');
 
-        var url = `{{ route('facility-booking.list') }}`;
+        var url = `{{ route('facility-booking.facility.list') }}`;
         var typingTimer;
         var doneTypingInterval = 200;
 

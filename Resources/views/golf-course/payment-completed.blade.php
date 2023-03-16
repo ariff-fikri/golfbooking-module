@@ -99,13 +99,13 @@
         $('#header-page-booking').html('Booking Details');
         
         if (window.location.href.indexOf("info") > -1) {
-            $('#back-main-button').prop('href', `{{ route('booking.index') }}`);
+            $('#back-main-button').prop('href', `{{ route('facility-booking.booking.index') }}`);
             $('#booking-name').html('Booking History');
         } else if (window.location.href.indexOf("dashboard") > -1) {
-            $('#back-main-button').prop('href', `{{ route('dashboard.index') }}`);
+            $('#back-main-button').prop('href', `{{ route('facility-booking.dashboard.index') }}`);
             $('#booking-name').html('Booking History');
         } else {
-            $('#back-main-button').prop('href', `{{ route('landing.index') }}`);
+            $('#back-main-button').prop('href', `{{ route('facility-booking.landing.index') }}`);
             $('#booking-name').html('Payment Completed');
         }
     </script>

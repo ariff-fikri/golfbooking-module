@@ -100,7 +100,7 @@ class GolfCourseController extends Controller
 
         DB::commit();
 
-        return redirect()->route('golf-course.payment-completed', $booking->id);
+        return redirect()->route('facility-booking.golf-course.payment-completed', $booking->id);
     }
 
     public function paymentCompleted(Request $request, Booking $booking)

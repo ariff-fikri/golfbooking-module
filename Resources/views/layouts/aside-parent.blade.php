@@ -4,7 +4,7 @@
         <div class="aside-primary d-flex flex-column align-items-lg-center flex-row-auto">
             <!--begin::Logo-->
             <div class="aside-logo d-none d-lg-flex flex-column align-items-center flex-column-auto py-10" id="kt_aside_logo">
-                <a href="{{ route('landing.index') }}">
+                <a href="{{ route('facility-booking.landing.index') }}">
                     <img alt="Logo" src="{{ Module::asset('golfbooking:media/logos/cara_golf_icon.png') }}" class="h-40px" />
                 </a>
             </div>

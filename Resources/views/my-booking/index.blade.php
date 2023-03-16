@@ -81,7 +81,7 @@
                                         <span class="fs-8 d-block fw-bold">
                                             <i class="bi bi-geo-alt-fill text-primary fs-9" ></i>
                                             {{ $upcoming_booking->course->name ?? '-' }}</span>
-                                        <span class="fs-8 text-primary"><a href="{{ route('booking.info', $upcoming_booking->id) }}"><i class="fa-solid fa-circle-chevron-right text-primary fs-2x"></i></a></span>
+                                        <span class="fs-8 text-primary"><a href="{{ route('facility-booking.booking.info', $upcoming_booking->id) }}"><i class="fa-solid fa-circle-chevron-right text-primary fs-2x"></i></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                         <span class="fs-8 d-block fw-bold">
                                             <i class="bi bi-geo-alt-fill text-primary fs-9" ></i>
                                             {{ $past_booking->course->name ?? '-' }}</span>
-                                        <span class="fs-8 text-primary"><a href="{{ route('booking.info', $past_booking->id) }}"><i class="fa-solid fa-circle-chevron-right text-primary fs-2x"></i></a></span>
+                                        <span class="fs-8 text-primary"><a href="{{ route('facility-booking.booking.info', $past_booking->id) }}"><i class="fa-solid fa-circle-chevron-right text-primary fs-2x"></i></a></span>
                                     </div>
                                 </div>
                             </div>

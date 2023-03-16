@@ -149,8 +149,8 @@
 
 @push('scripts')
     <script>
-        var time_type_url = '{{ route('golf-course.time_type') }}';
-        var holes_available_url = '{{ route('golf-course.holes_available') }}';
+        var time_type_url = '{{ route('facility-booking.golf-course.time_type') }}';
+        var holes_available_url = '{{ route('facility-booking.golf-course.holes_available') }}';
         var time_slots_all = @json($time_slots);
         var unavailable_time_slots = @json($unavailable_time_slots);
         var all_holes = @json($holes);

@@ -138,7 +138,7 @@
                 </div>
                 <!--end::Step 5-->
             </div>
-            <form class="mx-auto mw-600px w-100 pb-10" action="{{ route('golf-course.store') }}" method="POST" enctype="multipart/form-data" novalidate="novalidate" id="form-golf-course">
+            <form class="mx-auto mw-600px w-100 pb-10" action="{{ route('facility-booking.golf-course.store') }}" method="POST" enctype="multipart/form-data" novalidate="novalidate" id="form-golf-course">
                 <!--begin::Step 1-->
                 @include('golfbooking::golf-course.step-1')
                 <!--end::Step 1-->

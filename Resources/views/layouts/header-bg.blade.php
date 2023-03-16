@@ -5,7 +5,7 @@
         <!--begin::Container-->
         <div class="container ">
             <div class="row mt-3">
-                <div class="col-2 ps-0"><a href="{{ route('facility-booking.index') }}" id="back-main-button"><i class="bi bi-chevron-left fs-1 text-white"></i></a></div>
+                <div class="col-2 ps-0"><a href="{{ route('facility-booking.facility-booking.index') }}" id="back-main-button"><i class="bi bi-chevron-left fs-1 text-white"></i></a></div>
                 <div class="col-8"><h1 class="text-center text-white" id="header-page-booking"></h1></div>
                 <div class="col-2"></div>
             </div>

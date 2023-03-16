@@ -32,7 +32,7 @@
                 </h6>
             </div>
             <div class="d-flex justify-content-center pt-4">
-                <a href="{{ route('golf-course.index') }}" class="btn btn-outline btn-outline-primary btn-active-light-primary py-2 px-7 {{ $facility->status ? '' : 'disabled' }}">Book</a>
+                <a href="{{ route('facility-booking.golf-course.index') }}" class="btn btn-outline btn-outline-primary btn-active-light-primary py-2 px-7 {{ $facility->status ? '' : 'disabled' }}">Book</a>
             </div>
         </div>
     </div>

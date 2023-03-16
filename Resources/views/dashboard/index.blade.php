@@ -298,7 +298,7 @@
                                             data-kt-menu="true">
                                             <!--begin::Menu item-->
                                             <div class="menu-item px-3">
-                                                <a href="{{ route('dashboard.view', $booking->id) }}" class="menu-link px-3">View</a>
+                                                <a href="{{ route('facility-booking.dashboard.view', $booking->id) }}" class="menu-link px-3">View</a>
                                             </div>
                                             <!--end::Menu item-->
                                         </div>

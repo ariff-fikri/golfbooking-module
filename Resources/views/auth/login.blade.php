@@ -1,7 +1,7 @@
 @extends('golfbooking::layouts.authapp')
 @section('content')
     <!--begin::Form-->
-    <form class="form w-100 mt-10" id="form-login" action="{{ route('login.post') }}" method="POST">
+    <form class="form w-100 mt-10" id="form-login" action="{{ route('facility-booking.login.post') }}" method="POST">
         @csrf
         <!--begin::Heading-->
         <div class="text-center mb-8">
@@ -38,7 +38,7 @@
                    Remember Me
                 </label>
             </div>            <!--begin::Link-->
-            {{-- <a href="{{ route('forgot_password.show') }}" class=" text-white text-end">Forgot Password ?</a> --}}
+            {{-- <a href="{{ route('facility-booking.forgot_password.show') }}" class=" text-white text-end">Forgot Password ?</a> --}}
             <!--end::Link-->
         </div>
         <!--end::Wrapper-->
