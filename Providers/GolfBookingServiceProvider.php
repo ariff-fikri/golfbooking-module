@@ -32,6 +32,11 @@ class GolfBookingServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
         app()->make('router')->aliasMiddleware('auth', Authenticate::class);
         app()->make('router')->aliasMiddleware('guest', RedirectIfAuthenticated::class);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                initialCommand::class,
+            ]);
+        }
     }
 
     /**
@@ -42,7 +47,6 @@ class GolfBookingServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
-
     }
 
     /**
@@ -56,7 +60,8 @@ class GolfBookingServiceProvider extends ServiceProvider
             module_path($this->moduleName, 'Config/config.php') => config_path($this->moduleNameLower . '.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/config.php'), $this->moduleNameLower
+            module_path($this->moduleName, 'Config/config.php'),
+            $this->moduleNameLower
         );
     }
 

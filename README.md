@@ -12,7 +12,7 @@
 ## Install
 This package require another package to be installed. run the following command to install it first:
 ``` bash
-composer require  nwidart/laravel-modules
+composer require nwidart/laravel-modules
 ```
 
 ### Autoloading
@@ -44,6 +44,10 @@ composer require cara/golfbooking-module
 
 Optionally, you can add a `DEFAULT_PASSWORD_SEEDER` in your `.env` for the general password to be seed in your database.
 
+Run this command to enable the module:
+``` bash
+php artisan module:enable golfBooking 
+```
 
 Run this command to install all the dependencies needed for the module:
 ``` bash
