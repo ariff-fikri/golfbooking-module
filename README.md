@@ -79,3 +79,7 @@ Last thing, inside your project `config > auth.php` , change the `providers` arr
   
 
 Ariff Fikri is a senior web developer specialising on the Laravel framework. Visit [my website](https://ariff-fikri.com/).
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
