@@ -15,7 +15,7 @@ class AccountSeeder extends Seeder
      */
     public function run()
     {
-        $accounts = collect(json_decode(File::get('Modules/GolfBooking/database/json/accounts.json'), true));
+        $accounts = collect(json_decode(File::get('Modules/Golfbooking/database/json/accounts.json'), true));
 
         foreach ($accounts as $key => $account) {
             Account::create($account);
