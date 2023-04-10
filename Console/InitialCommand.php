@@ -9,7 +9,7 @@ use Modules\Golfbooking\Models\User;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-class InitialCommand extends Command
+class initialCommand extends Command
 {
     /**
      * The name and signature of the console command.
