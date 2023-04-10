@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\GolfBooking\Http\Controllers\Dashboard\DashboardController;
+use Modules\Golfbooking\Http\Controllers\Dashboard\DashboardController;
 
 Route::group([
     'prefix' => '/dashboard',

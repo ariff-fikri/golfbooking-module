@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\GolfBooking\Http\Controllers\Auth;
+namespace Modules\Golfbooking\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Modules\GolfBooking\Http\Requests\LoginRequest;
+use Modules\Golfbooking\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace Modules\GolfBooking\Models;
+namespace Modules\Golfbooking\Models;
 
-use Modules\GolfBooking\Http\Traits\UserGetters;
+use Modules\Golfbooking\Http\Traits\UserGetters;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
-use Modules\GolfBooking\Models\Booking;
+use Modules\Golfbooking\Models\Booking;
 
 class User extends Authenticatable
 {

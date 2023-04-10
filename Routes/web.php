@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\GolfBooking\Http\Controllers\LandingController;
+use Modules\Golfbooking\Http\Controllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------

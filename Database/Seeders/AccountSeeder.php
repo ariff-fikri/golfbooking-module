@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\GolfBooking\Database\Seeders;
+namespace Modules\Golfbooking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
-use Modules\GolfBooking\Models\Account;
+use Modules\Golfbooking\Models\Account;
 
 class AccountSeeder extends Seeder
 {

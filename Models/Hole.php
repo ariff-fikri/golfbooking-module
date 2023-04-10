@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\GolfBooking\Models;
+namespace Modules\Golfbooking\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

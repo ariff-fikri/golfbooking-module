@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\GolfBooking\Http\Traits;
+namespace Modules\Golfbooking\Http\Traits;
 use Illuminate\Support\Facades\Hash;
 use Nwidart\Modules\Facades\Module;
 

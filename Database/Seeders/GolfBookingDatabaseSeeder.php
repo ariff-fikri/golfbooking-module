@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\GolfBooking\Database\Seeders;
+namespace Modules\Golfbooking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;

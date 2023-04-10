@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\GolfBooking\Http\Controllers\Booking;
+namespace Modules\Golfbooking\Http\Controllers\Booking;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Modules\GolfBooking\Models\Booking;
+use Modules\Golfbooking\Models\Booking;
 
 class BookingController extends Controller
 {

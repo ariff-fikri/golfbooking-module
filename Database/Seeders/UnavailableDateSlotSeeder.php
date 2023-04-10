@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\GolfBooking\Database\Seeders;
+namespace Modules\Golfbooking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\GolfBooking\Models\UnavailableDateSlot;
+use Modules\Golfbooking\Models\UnavailableDateSlot;
 
 class UnavailableDateSlotSeeder extends Seeder
 {

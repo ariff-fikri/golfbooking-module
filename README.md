@@ -61,7 +61,7 @@ Last thing, inside your project `config > auth.php` , change the `providers` arr
 	'users' => [
 		'driver' => 'eloquent',
 -		'model' =>  User::class, // Remove this line
-+		'model' =>  Modules\GolfBooking\Models\User::class, // Change it to this
++		'model' =>  Modules\Golfbooking\Models\User::class, // Change it to this
 	],
 ],
 ```

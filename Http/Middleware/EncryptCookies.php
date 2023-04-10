@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\GolfBooking\Http\Middleware;
+namespace Modules\Golfbooking\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 
