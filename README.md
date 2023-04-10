@@ -51,7 +51,7 @@ php artisan module:enable golfBooking
 
 Run this command to install all the dependencies needed for the module:
 ``` bash
-php artisan command:initialCommand
+php artisan command:initializeCommand
 ```
 This command will automatically enable the module, publish it to the local project, migrate all the migrations inside the module, and also seed it.
 

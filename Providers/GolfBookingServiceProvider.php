@@ -4,7 +4,7 @@ namespace Modules\Golfbooking\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
-use Modules\Golfbooking\Console\initialCommand;
+use Modules\Golfbooking\Console\initializeCommand;
 use Modules\Golfbooking\Http\Middleware\Authenticate;
 use Modules\Golfbooking\Http\Middleware\RedirectIfAuthenticated;
 
@@ -35,7 +35,7 @@ class GolfBookingServiceProvider extends ServiceProvider
         app()->make('router')->aliasMiddleware('guest', RedirectIfAuthenticated::class);
         if ($this->app->runningInConsole()) {
             $this->commands([
-                initialCommand::class,
+                initializeCommand::class,
             ]);
         }
     }
