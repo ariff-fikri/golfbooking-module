@@ -708,7 +708,7 @@ progress {
     .container-md,
     .container-sm,
     .container {
-        max-width: 1320px;
+        max-width: 1320px !important;
     }
 }
 
@@ -55791,7 +55791,4 @@ body {
 .app-engage-btn.hover-primary:hover i,
 .app-engage-btn.hover-primary:hover .svg-icon {
     color: var(--kt-dark-inverse);
-}
-html {
-    background: #fff !important;
 }

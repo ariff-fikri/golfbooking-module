@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Middleware;
+namespace Modules\GolfBooking\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

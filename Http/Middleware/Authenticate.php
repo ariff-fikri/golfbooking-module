@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Middleware;
+namespace Modules\GolfBooking\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 
@@ -15,7 +15,7 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('facility-booking.login.show');
+            return route('login.show');
         }
     }
 }

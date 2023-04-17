@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Requests;
+namespace Modules\GolfBooking\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

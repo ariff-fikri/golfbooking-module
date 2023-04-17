@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Golfbooking\Http\Controllers\LandingController;
+use Modules\GolfBooking\Http\Controllers\LandingController;
+use Modules\GolfBooking\Http\Controllers\ManageBookingController;
+use Modules\GolfBooking\Http\Controllers\FoodOrderingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +31,12 @@ Route::group([
         include('facility.php');
 
         include('booking.php');
+        
+        include('teebox.php');
+        include('foodordering.php');
 
         Route::get('/', [LandingController::class, 'index'])->name('landing.index');
-    });
+        Route::get('/manage-booking-golf', [ManageBookingController::class, 'index'])->name('manage-booking-golf.index');
+        Route::get('/food-ordering', [FoodOrderingController::class, 'index'])->name('food-ordering.index');
+     });
 });

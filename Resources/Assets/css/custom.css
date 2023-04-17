@@ -1,12 +1,4 @@
-@media (min-width: 415px) {
-    body{
-        max-width: 414px !important;
-        min-height: 896px !important;
-        width: 100% !important;
-        margin: 0 auto;
-        background: #fff;
-    }
-}
+
     html{
         background: #fff !important;
 
@@ -28,7 +20,7 @@
 		 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     }
-
+   
     .svg-icon {
         line-height: 1;
         color: #078E83;

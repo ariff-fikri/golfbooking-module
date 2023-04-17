@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Golfbooking\Database\Seeders;
+namespace Modules\GolfBooking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\Golfbooking\Models\TimeSlot;
+use Modules\GolfBooking\Models\TimeSlot;
 
 class TimeSlotSeeder extends Seeder
 {

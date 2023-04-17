@@ -2,7 +2,7 @@
     <!--begin::Wrapper-->
     <div class="w-100">
         <!--begin::booking details-->
-        <div class="border p-5 mb-6 rounded bg-white" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+        <div class="border p-5 mb-6 rounded bg-white">
             <div class="row">
                 <div class="row d-flex align-items-center justify-content-between">
                     <div class="col-7 d-flex align-items-center">
@@ -45,8 +45,7 @@
         </div>
         <!--end::booking details-->
         <!--begin::player details-->
-        <div class="border p-5 mb-6 rounded bg-white"
-            style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+        <div class="border p-5 mb-6 rounded bg-white">
             <div class="d-flex  flex-column collapsible toggle mb-0" data-bs-toggle="collapse" data-bs-target="#show_more">
                 <!--begin::Title-->
                 <div class="d-flex align-items-center justify-content-between mb-4">
@@ -75,7 +74,7 @@
         <!--end::player details-->
 
         <!--begin::player details-->
-        <div class="border p-5 mb-6 rounded" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+        <div class="border p-5 mb-6 rounded bg-white">
             <div class="d-flex  flex-column collapsible toggle mb-0">
                 <!--begin::Title-->
                 <div class="d-flex align-items-center justify-content-between mb-5">
@@ -115,7 +114,7 @@
         </div>
         <!--end::player details-->
         <!--begin::Alert-->
-        <div class="alert bg-light-info d-flex align-items-center p-5">
+        <div class="alert bg-light-info d-flex align-items-center mb-0">
             <!--begin::Icon-->
             <span class="svg-icon  me-3">
                 <i class="fas fa-info-circle fs-2x text-info"></i>

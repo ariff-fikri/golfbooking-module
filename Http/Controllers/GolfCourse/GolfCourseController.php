@@ -1,20 +1,20 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Controllers\GolfCourse;
+namespace Modules\GolfBooking\Http\Controllers\GolfCourse;
 
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Modules\Golfbooking\Models\Booking;
-use Modules\Golfbooking\Models\BookingPlayer;
-use Modules\Golfbooking\Models\Course;
-use Modules\Golfbooking\Models\Hole;
-use Modules\Golfbooking\Models\PaymentDetail;
-use Modules\Golfbooking\Models\TimeSlot;
-use Modules\Golfbooking\Models\UnavailableDateSlot;
-use Modules\Golfbooking\Models\UnavailableTimeSlot;
+use Modules\GolfBooking\Models\Booking;
+use Modules\GolfBooking\Models\BookingPlayer;
+use Modules\GolfBooking\Models\Course;
+use Modules\GolfBooking\Models\Hole;
+use Modules\GolfBooking\Models\PaymentDetail;
+use Modules\GolfBooking\Models\TimeSlot;
+use Modules\GolfBooking\Models\UnavailableDateSlot;
+use Modules\GolfBooking\Models\UnavailableTimeSlot;
 
 class GolfCourseController extends Controller
 {

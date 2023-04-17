@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Golfbooking\Providers;
+namespace Modules\GolfBooking\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $moduleNamespace = 'Modules\Golfbooking\Http\Controllers';
+    protected $moduleNamespace = 'Modules\GolfBooking\Http\Controllers';
 
     /**
      * Called before routes are registered.

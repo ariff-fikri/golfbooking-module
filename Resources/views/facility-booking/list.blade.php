@@ -1,4 +1,6 @@
+<div class="row">
 @foreach ($facilities as $facility)
+<div class="col-lg-4">
     <div class="card mb-4 facility-card" data-name="{{ $facility->name }}">
         <div class="card-header p-0">
             <div class="overlay">
@@ -36,7 +38,9 @@
             </div>
         </div>
     </div>
+</div>
 @endforeach
+</div>
 
 <script>
     $('.facility-card').hide();

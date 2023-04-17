@@ -1,16 +1,16 @@
 <div class="current flex-column" data-kt-stepper-element="content">
     <div class="flex-column my-5">
-        <h4 class="text-white"> Today Available</h4>
-        <h1 class="text-white" style="font-size: 30px; "> {{ $today_available }} Slots</h1>
+        <h4> Today Available</h4>
+        <h1 style="font-size: 30px; "> {{ $today_available }} Slots</h1>
     </div>
     <div class="w-100">
         <div class="row">
             <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
             @foreach ($courses as $course)
-                <div class="col-lg-12 course-div-card d-none">
+                <div class="col-lg-4 course-div-card d-none">
                     <input type="radio" class="btn-check course_id" id="course_id_{{ $course->id }}" name="course_id" value="{{ $course->id }}" />
-                    <label id='show_bg_2' style="background: rgb(255, 255, 255); background: linear-gradient(106DEG, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9528186274509804) 60%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%), {{ $course->id == 1 ? 'url(' . Module::asset('golfbooking:media/image/east1.png') . ')' : ($course->id == 2 ? 'url(' . Module::asset('golfbooking:media/image/east2.png') . ')' : 'url(' . Module::asset('golfbooking:media/image/east3.png') . ')') }};" class="btn btn-outline btn-active-light-primary px-0 pb-4 pt-0 d-flex mb-10 flex-column" for="course_id_{{ $course->id }}">
-                        <div class="bg-white ps-1" style="border-top: 5px; border-top-left-radius: 3px; border-top-right-radius: 3px;">
+                    <label id='show_bg_2' style="background: rgb(255, 255, 255); background: linear-gradient(106DEG, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9528186274509804) 60%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%), {{ $course->id == 1 ? 'url(' . Module::asset('golfbooking:media/image/east1.png') . ')' : ($course->id == 2 ? 'url(' . Module::asset('golfbooking:media/image/east2.png') . ')' : 'url(' . Module::asset('golfbooking:media/image/east3.png') . ')') }};" class="btn btn-outline btn-outline-primary btn-outline-dashed btn-active-light-primary px-0 pb-4 pt-0 d-flex mb-10 flex-column" for="course_id_{{ $course->id }}">
+                        <div class="bg-white ps-1" style="border-top: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;">
                             <div class="row hover-scroll-x flex-row py-4 px-3" id="tns-slots-{{ $course->id }}">
                                 @foreach ($dates as $date)
                                     @php
@@ -58,12 +58,12 @@
                 </div>
             @endforeach
         </div>
-        <div class="d-flex align-items-center justify-content-between course-div-card d-none">
+        <div class="d-flex align-items-center course-div-card d-none">
             <span class="text-dark fw-bold  fs-5 mb-2"> <i class="fas fa-circle fs-1hx pe-2 text-gray-400"></i>Unavailable </span>
-            <span class="text-dark fw-bold  fs-5 mb-2"><i class="fas fa-circle fs-1hx pe-2 text-gray-200"></i> Available </span>
-            <span class="text-dark fw-bold  fs-5 mb-2"> <i class="fas fa-circle fs-1hx pe-2 text-primary"></i> Selected </span>
+            <span class="text-dark fw-bold  fs-5 mb-2"><i class="fas fa-circle fs-1hx px-2 text-info"></i> Available </span>
+            <span class="text-dark fw-bold  fs-5 mb-2"> <i class="fas fa-circle fs-1hx px-2 text-primary"></i> Selected </span>
         </div>
-
+        
         <div id="invalid-input" class="text-danger course-div-card d-none">Please choose at least one.</div>
     </div>
 </div>

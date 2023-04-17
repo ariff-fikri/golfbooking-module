@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Golfbooking\Providers;
+namespace Modules\GolfBooking\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
-use Modules\Golfbooking\Console\initializeCommand;
-use Modules\Golfbooking\Http\Middleware\Authenticate;
-use Modules\Golfbooking\Http\Middleware\RedirectIfAuthenticated;
+use Modules\GolfBooking\Console\initializeCommand;
+use Modules\GolfBooking\Http\Middleware\Authenticate;
+use Modules\GolfBooking\Http\Middleware\RedirectIfAuthenticated;
 
 class GolfBookingServiceProvider extends ServiceProvider
 {

@@ -5,17 +5,19 @@ namespace Modules\GolfBooking\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UnavailableDateSlot extends Model
+class Teebox extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'course_id',
-        'date',
+        'name',
+        'slot',
+        'disable_date',
+        'expiration_date'
+
     ];
 
-    public function course()
-    {
-        return $this->belongsTo(Course::class, 'course_id', 'id');
-    }
+    protected $dates = [
+        'expiration_date'
+    ];
 }

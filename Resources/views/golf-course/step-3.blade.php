@@ -2,7 +2,7 @@
     <!--begin::Wrapper-->
     <div class="w-100">
         <!--begin::Heading-->
-        <div class="pb-10 pb-12">
+        <div>
             <!--begin::booking details-->
             <div class="border p-5 mb-6 rounded bg-white" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
                 <div class="row">

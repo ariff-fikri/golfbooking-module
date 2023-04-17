@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Golfbooking\Console;
+namespace Modules\GolfBooking\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
-use Modules\Golfbooking\Models\User;
+use Modules\GolfBooking\Models\User;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Controllers\Facility;
+namespace Modules\GolfBooking\Http\Controllers\Facility;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Modules\Golfbooking\Models\Course;
-use Modules\Golfbooking\Models\Facility;
-use Modules\Golfbooking\Models\TimeSlot;
-use Modules\Golfbooking\Models\UnavailableTimeSlot;
+use Modules\GolfBooking\Models\Course;
+use Modules\GolfBooking\Models\Facility;
+use Modules\GolfBooking\Models\TimeSlot;
+use Modules\GolfBooking\Models\UnavailableTimeSlot;
 
 class FacilityController extends Controller
 {

@@ -1,10 +1,9 @@
-@extends('golfbooking::layouts.app-landing')
+@extends('golfbooking::layouts.app')
 
 @section('content')
     <style>
-        /* .width-golf{
-                        width: 47%;
-                    } */
+
+                    
         .container {
             overflow: hidden;
         }
@@ -60,106 +59,139 @@
         }
     </style>
     <!--begin::Landing hero-->
-    <div class="d-flex flex-column flex-center min-h-350px min-h-lg-500px px-9">
-        <div class="row mb-10 width-golf">
-            <!--begin::Col-->
-            <div class="col-12">
-                <!--begin::Option-->
-
-                <div id='show_bg_3' class="rounded p-7 py-4 d-flex mb-10 flex-column"
-                    style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
-                    <!--begin::Info-->
-                    <div class="py-0">
-                        <div class="d-flex align-items-center justify-content-between flex-wrap">
-                            <!--begin::Label-->
-                            <span class="fs-base fw-semibold lh-1 fs-8 mb-2" style="color:#11998E;">From 7AM to 11AM
-                                only</span>
-                            <!--end::Label-->
+    <div class="row gy-5 g-xl-10">
+        <!--begin::Col-->
+        <div class="col-xl-4 mb-xl-10">
+            <!--begin::Engage widget 3-->
+            <div class="card h-md-100" data-theme="light">
+                <!--begin::Body-->
+                <div class="card-body d-flex flex-column flex-center">
+                    <!--begin::Heading-->
+                    <div class="mb-2">
+                        <!--begin::Title-->
+                        <h1 class="fw-semibold text-gray-800 text-center lh-lg">Quick form to
+                        <br />
+                        <span class="fw-bolder elia-test">Create a New Booking</span></h1>
+                        <!--end::Title-->
+                        <!--begin::Illustration-->
+                        <div class="py-10 text-center">
+                            <img src="assets/media/svg/illustrations/easy/3.svg" class="theme-light-show w-200px" alt="" />
+                            <img src="assets/media/svg/illustrations/easy/3-dark.svg" class="theme-dark-show w-200px" alt="" />
                         </div>
-                        <h4 class="fw-bold  ">BREAKFAST <br><span class="ms-6"> HOUR 10% OFF </span></h4>
-                        <a href="{{ route('facility-booking.dashboard.index') }}" class="btn btn-sm btn-primary py-1 px-3 ms-6">Find out
-                            more</a>
+                        <!--end::Illustration-->
                     </div>
-                    <!--end::Info-->
-                </div>
-                <!--end::Option-->
-            </div>
-            <!--end::Col-->
-            <div class="col-12 d-flex justify-content-between align-items-center mb-3">
-                <h4>My Booking</h4>
-                <a href="{{ route('facility-booking.booking.index') }}">See all</a>
-            </div>
-            <div class="col-12">
-                <div class="card p-5" style="background: linear-gradient(to left, #51C6BC 0%, #11998E 100%);">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-6">
-                            <img src="{{ Module::asset('golfbooking:media/logos/Golf-rafiki.png') }}" class="w-150px" alt="">
-                        </div>
-                        <div class="col-6 text-center">
-                            <h5 class="fs-base text-white">Your Flight Time Today</h5>
-                            <h1 class="text-white fw-bolder text-center">08:30</h1>
-                            <h5 class="fs-base text-white lh-4 mb-0">Current Game : 07:30 <br> Waiting : 4 Flights</h5>
-                        </div>
+                    <!--end::Heading-->
+                    <!--begin::Links-->
+                    <div class="text-center mb-1">
+                        <!--begin::Link-->
+                        <a class="btn btn-sm btn-primary me-2" href="{{ route('facility-booking.golf-course.index') }}">Book Now</a>
+                        <!--end::Link-->
+                        <!--begin::Link-->
+                        <a class="btn btn-sm btn-light" href="{{ route('facility-booking.booking.index') }}">Booking List</a>
+                        <!--end::Link-->
                     </div>
+                    <!--end::Links-->
                 </div>
+                <!--end::Body-->
+                
             </div>
+            <!--end::Engage widget 3-->
         </div>
-        <div class="row text-center">
-            <div class="col-4">
-                <a href="{{ route('facility-booking.facility.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                    <i class="fas fa-calendar-check fs-3x text-primary"></i>
-                     <span class="mt-3"> Facility Booking </span>
-                    </a>
+        <!--end::Col-->
+        <!--begin::Col-->
+        <div class="col-xl-8 mb-5 mb-xl-10">
+            <!--begin::Chart widget 11-->
+            <div class="card card-flush h-xl-100">
+                <!--begin::Heading-->
+                <div class="card-header rounded bgi-no-repeat bgi-size-cover bgi-position-y-top bgi-position-x-center align-items-start h-250px width-golf" style="background-image:url('assets/media/svg/shapes/wave-bg-dark.svg');    background-color: #0e998e;" data-theme="light">
+                    <!--begin::Title-->
+                    <h3 class="card-title align-items-start flex-column text-white pt-15">
+                        <span class="fw-bold fs-2x mb-3">My Booking</span>
+                        <div class="fs-4 text-white">
+                            <span class="opacity-75">You have</span>
+                            <span class="position-relative d-inline-block">
+                                <a href="../../demo7/dist/pages/user-profile/projects.html" class="link-white opacity-75-hover fw-bold d-block mb-1">4 bookings</a>
+                                <!--begin::Separator-->
+                                <span class="position-absolute opacity-50 bottom-0 start-0 border-2 border-body border-bottom w-100"></span>
+                                <!--end::Separator-->
+                            </span>
+                            <span class="opacity-75">in the list</span>
+                        </div>
+                    </h3>
+                    <!--end::Title-->
+                </div>
+                <!--end::Heading-->
+                <!--begin::Body-->
+                <div class="card-body mt-n20">
+                    <!--begin::Stats-->
+                    <div class="mt-n20 position-relative">
+                        <!--begin::Row-->
+                        <div class="row g-3 g-lg-6">
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a href="{{ route('facility-booking.facility.index') }}" class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                    <i class="fas fa-calendar-check fs-3x text-primary"></i>
+                                     <span class="mt-3"> Facility Booking </span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-golf-ball fs-3x text-primary"></i>
+                                     <span class="mt-3"> Membership Info </span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-utensils fs-3x text-primary"></i>
+                                     <span class="mt-3"> Food Ordering </span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-cloud-sun fs-3x text-primary"></i>
+                                     <span class="mt-3"> Forecast </span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-percent fs-3x text-primary"></i>
+                                     <span class="mt-3"> Coupon &<br> Voucher </span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-ticket-alt fs-3x text-primary"></i>
+                                     <span class="mt-3"> Events</span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-info fs-3x text-primary"></i>
+                                     <span class="mt-3"> Facility Info</span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-map-marked-alt fs-3x text-primary"></i>
+                                     <span class="mt-3">Directory</span>
+                                    </a>
+                            </div>
+                            <div class="col-xxl-2 col-xl-3 col-sm-4 col-6">
+                                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
+                                     <i class="fas fa-shopping-basket fs-3x text-primary"></i>
+                                      <span class="mt-3">Pro Shop</span>
+                                    </a>
+                            </div>
+                            
+                        </div>
+                        <!--end::Row-->
+                    </div>
+                    <!--end::Stats-->
+                </div>
+                <!--end::Body-->
             </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-golf-ball fs-3x text-primary"></i>
-                     <span class="mt-3"> Membership Info </span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-utensils fs-3x text-primary"></i>
-                     <span class="mt-3"> Food Ordering </span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-cloud-sun fs-3x text-primary"></i>
-                     <span class="mt-3"> Forecast </span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-percent fs-3x text-primary"></i>
-                     <span class="mt-3"> Coupon &<br> Voucher </span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-ticket-alt fs-3x text-primary"></i>
-                     <span class="mt-3"> Events</span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-info fs-3x text-primary"></i>
-                     <span class="mt-3"> Facility Info</span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-map-marked-alt fs-3x text-primary"></i>
-                     <span class="mt-3">Directory</span>
-                    </a>
-            </div>
-            <div class="col-4">
-                <a  class="app-engage-btn hover-dark rounded text-hover-white rounded-2 menu-shadow" >
-                     <i class="fas fa-shopping-basket fs-3x text-primary"></i>
-                      <span class="mt-3">Pro Shop</span>
-                    </a>
-            </div>
+            <!--end::Chart widget 11-->
         </div>
+        <!--end::Col-->
     </div>
-    <!--end::Landing hero-->
+   
 @endsection

@@ -1,4 +1,4 @@
-@extends('golfbooking::layouts.app-mobile2')
+@extends('golfbooking::layouts.app')
 
 @section('content')
     <div data-kt-stepper-element="content">

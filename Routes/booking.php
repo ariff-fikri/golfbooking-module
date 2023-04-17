@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Golfbooking\Http\Controllers\Booking\BookingController;
+use Modules\GolfBooking\Http\Controllers\Booking\BookingController;
 
 Route::group([
     'prefix' => '/booking',

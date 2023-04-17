@@ -2,11 +2,13 @@
 
 namespace Modules\GolfBooking\Http\Controllers;
 
-use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Contracts\Support\Renderable;
+use Modules\GolfBooking\Http\Requests\CreateTeeboxRequest;
+use Modules\GolfBooking\Models\Teebox;
 
-class LandingController extends Controller
+class ManageBookingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +16,11 @@ class LandingController extends Controller
      */
     public function index()
     {
-        return view('golfbooking::landing.index');
+        $teeboxes = Teebox::all();
+
+        return view('golfbooking::manage-booking-golf.index', compact(
+            'teeboxes'
+        ));
     }
 
     /**
@@ -23,7 +29,7 @@ class LandingController extends Controller
      */
     public function create()
     {
-        return view('golfbooking::create');
+        return view('golfbooking::manage-booking-golf.modal.create-teebox');
     }
 
     /**
@@ -31,9 +37,11 @@ class LandingController extends Controller
      * @param Request $request
      * @return Renderable
      */
-    public function store(Request $request)
+    public function store(CreateTeeboxRequest $request)
     {
-        //
+        Teebox::create($request->all());
+
+        return redirect()->back()->with('success', 'Tee box successfully created');
     }
 
     /**
@@ -43,7 +51,7 @@ class LandingController extends Controller
      */
     public function show($id)
     {
-        return view('golfbooking::show');
+        return view('golfbooking::manage-booking-golf.modal.edit-teebox');
     }
 
     /**
@@ -53,7 +61,11 @@ class LandingController extends Controller
      */
     public function edit($id)
     {
-        return view('golfbooking::edit');
+       $teebox = Teebox::find($id)->first();
+
+        return view('golfbooking::manage-booking-golf.modal.edit-teebox', compact(
+            'teebox'
+        ));
     }
 
     /**
@@ -64,7 +76,9 @@ class LandingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Teebox::find($id)->update($request->all());
+
+        return redirect()->back()->with('success', 'Teebox successfully updated');
     }
 
     /**
@@ -72,8 +86,10 @@ class LandingController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function destroy(Teebox $teebox)
     {
-        //
+        Teebox::find($teebox->id)->delete();
+
+        return redirect()->back()->with('success', 'Teebox successfully deleted');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Middleware;
+namespace Modules\GolfBooking\Http\Middleware;
 
 use Fideloper\Proxy\TrustProxies as Middleware;
 use Illuminate\Http\Request;

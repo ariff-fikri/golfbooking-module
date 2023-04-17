@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Golfbooking\Http\Controllers\Dashboard;
+namespace Modules\GolfBooking\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Modules\Golfbooking\Models\Booking;
+use Modules\GolfBooking\Models\Booking;
 
 class DashboardController extends Controller
 {

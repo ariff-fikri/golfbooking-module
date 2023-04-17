@@ -1,4 +1,4 @@
-@extends('golfbooking::layouts.app-mobile2')
+@extends('golfbooking::layouts.app')
 @section('content')
     <style>
         .btn-check:checked+.btn.btn-active-light-primary,
@@ -9,7 +9,7 @@
         .btn.btn-active-light-primary.active,
         .btn.btn-active-light-primary.show,
         .show>.btn.btn-active-light-primary {
-            border: 1px solid #11998e !important;
+            border: 3px solid #11998e !important;
 
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
@@ -108,9 +108,7 @@
         }
     </style>
 
-    <div class="container-xxl" id="kt_content_container">
-        <div class="stepper stepper-links d-flex flex-column hover-scroll-y" id="kt_create_booking_stepper"
-            data-kt-scroll="true" data-kt-scroll-height="{default: '896px', lg: '896px'}" style="overflow-x: hidden;">
+        <div class="stepper stepper-links d-flex flex-column" id="kt_create_booking_stepper">
             <div class="stepper-nav mb-5 d-none">
                 <!--begin::Step 1-->
                 <div class="stepper-item current" data-kt-stepper-element="nav">
@@ -138,7 +136,7 @@
                 </div>
                 <!--end::Step 5-->
             </div>
-            <form class="mx-auto mw-600px w-100 pb-10" action="{{ route('facility-booking.golf-course.store') }}" method="POST" enctype="multipart/form-data" novalidate="novalidate" id="form-golf-course">
+            <form action="{{ route('facility-booking.golf-course.store') }}" method="POST" enctype="multipart/form-data" novalidate="novalidate" id="form-golf-course">
                 <!--begin::Step 1-->
                 @include('golfbooking::golf-course.step-1')
                 <!--end::Step 1-->
@@ -154,7 +152,7 @@
                 <!--begin::Step 4-->
                 @include('golfbooking::golf-course.step-4')
                 <!--end::Step 4-->
-                
+
                 <!--begin::Actions-->
                 <div class="d-flex flex-stack pt-8">
                     <div class="mr-2">
@@ -194,7 +192,6 @@
                 </div>
             </form>
         </div>
-    </div>
 @endsection
 
 @push('scripts')

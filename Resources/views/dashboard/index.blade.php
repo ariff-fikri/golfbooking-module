@@ -340,10 +340,6 @@
                             <div class="d-block text-start ms-5">
                                 <h2 class="text-bold text-primary">#1</h2>
                                 <span class="fw-semibold fs-3"> 1st Nine </span>
-
-
-
-
                             </div>
 
                             <span class="fw-semibold text-primary"> 226 Booked </span>

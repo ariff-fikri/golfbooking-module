@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Golfbooking\Database\Seeders;
+namespace Modules\GolfBooking\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\Golfbooking\Models\Facility;
+use Modules\GolfBooking\Models\Facility;
 
 class FacilitySeeder extends Seeder
 {
