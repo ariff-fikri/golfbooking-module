@@ -69,9 +69,6 @@ Last thing, inside your project `config > auth.php` , change the `providers` arr
 ## Credits
 
 - [Ariff Fikri](https://github.com/ariff-fikri)
-
-- [Cara Com My](https://cara.com.my/cara-com-my/)
-
   
 
 ## About Ariff Fikri
